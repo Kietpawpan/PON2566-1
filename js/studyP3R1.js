@@ -31,10 +31,13 @@ function studyP3R1(){
 	var socialTH = "สมุดสังคมสีขาว (เล่ม 2) + หนังสือสังคม\n\n";
 	var computer = "สมุดวิทยาการคำนวณ (เล่ม 8)\n\n";
 	var history = "หนังสือประวัติศาสตร์ + สมุดสังคม ประวัติศาสตร์ (เล่ม 2)\n\n";
-
     	var hw1 = "";
-	var dd1 = "2023-05-17";
-
+	var dd1 = "2023-05-17"; //300000
+        var net = 6106;
+	var fuel = 500;
+	var ex = net + fuel;
+	var in = 150000 + 150000;
+	var rem = in - ex;
      	var hw2 = "";
 	var dd2 = "2023-06-30";
 
@@ -79,6 +82,6 @@ function studyP3R1(){
 	else{subjects="หยุดเรียน";}
 
     document.getElementById("myDate").innerHTML ="วัน" +  thDay + "ที่ "  +  thDate + " " + thMonth + " " + thYear + ":\n==================\n\n"   
-+ subjects + "\n\n======\n" + toDo;
++ subjects + "\n\n======\n" + toDo + " " + rem;
 }
  
